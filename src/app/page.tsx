@@ -1,12 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Moon Kata - Apps",
+  description: "I'm Aibek, a solo-developer building some cool stuff. Explore my apps and discover what I've been building.",
+  keywords: "moonkata,apps,developer,solo,developer,building,cool,stuff,explore,discover,building",
+  authors: [{ name: "Aibek" }],
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://moonkata.com/apps",
+  },
+}
 
 export default function Home() {
   return (
     <main className="w-full max-w-[500px] mx-auto px-5 pt-[100px] pb-[100px] space-y-[50px]">
       <section>
         <h1 className="text-3xl font-semibold mb-4">
-          Welcome to MoonKata 👋
+          Welcome to Moon Kata - Apps 👋
         </h1>
         <p className="opacity-50">
           I&apos;m Aibek, a solo-developer building some cool stuff. Explore my apps and discover what I&apos;ve been building.

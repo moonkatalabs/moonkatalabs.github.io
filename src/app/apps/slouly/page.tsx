@@ -73,6 +73,11 @@ export default function SloulyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <section className="flex items-center justify-center bg-slate-900 p-2">
+        <Link href="/" className="text-white">
+          Moon Kata
+        </Link>
+      </section>
       <main className="w-full max-w-[500px] mx-auto px-5 pt-[100px] pb-[100px] space-y-[50px]">
         <section>
           <Image
@@ -168,10 +173,6 @@ export default function SloulyPage() {
         </section>
 
         <footer className="flex items-center justify-center gap-2">
-          <Link href="/" className="text-[#7A78FF]">
-            Home
-          </Link>
-          <span>·</span>
           <Link href="/apps/slouly/privacy" className="text-[#7A78FF]">
             Privacy Policy
           </Link>

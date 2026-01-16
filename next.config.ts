@@ -7,15 +7,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/apps',
-        destination: '/',
-        permanent: true,
-      },
-    ]
-  },
 };
 
 export default nextConfig;

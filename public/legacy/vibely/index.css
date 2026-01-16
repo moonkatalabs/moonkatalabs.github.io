@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Aeonik';
+    src: url('./assets/fonts/Aeonik-Regular.woff2') format('woff2'),
+         url('./assets/fonts/Aeonik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aeonik';
+    src: url('./assets/fonts/Aeonik-Medium.woff2') format('woff2'),
+         url('./assets/fonts/Aeonik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: black;
+    background-size: contain;
+}
+
+body {
+    text-align: center;
+    color: white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.container > *:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+video {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+a {
+    color: #7A78FF;
+}
+
+ul, ol {
+    margin-left: 16px;
+}
+
+.secondary {
+    opacity: 0.5;
+}

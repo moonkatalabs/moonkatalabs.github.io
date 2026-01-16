@@ -1,0 +1,256 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms of Use for Slouly - Music Speed Changer",
+  description: "Terms of Use for Slouly - Music Speed Changer",
+};
+
+export default function SloulyTermsPage() {
+  return (
+    <main className="w-full max-w-[500px] mx-auto px-5 pt-[100px] pb-[100px] space-y-[50px] text-left">
+      <section>
+        <Link href="/apps/slouly">
+          <Image
+            src="/legacy/slouly/assets/logo.png"
+            alt="Logo"
+            width={80}
+            height={80}
+          />
+        </Link>
+      </section>
+
+      <h2 className="text-2xl font-semibold">Terms of Service for Slouly - Music Speed Changer</h2>
+
+      <p>
+        These Terms of Service govern your use of Slouly - Music Speed Changer, our website located at{" "}
+        <a href="https://moonkata.com/apps/slouly" className="text-[#7A78FF]">https://moonkata.com/apps/slouly</a>,
+        and any related services provided by Aibek Mazhitov.
+      </p>
+
+      <p>
+        When you use Slouly - Music Speed Changer, you agree to abide by these Terms of Service and to comply with all
+        applicable laws and
+        regulations. If you do not agree with these Terms of Service, you are prohibited from further using the app,
+        accessing our website, or using any other services provided by Aibek Mazhitov.
+      </p>
+
+      <p>
+        If you access or download Slouly - Music Speed Changer from (1) the Apple App Store, you agree to any Usage Rules set
+        forth in the App
+        Store Terms of Service; and/or (2) the Google Play Store, you agree to the Android, Google Inc. Terms and Conditions
+        including the Google Apps Terms of Service.
+      </p>
+
+      <p>
+        We, Aibek Mazhitov, reserve the right to review and amend any of these Terms of Service at our sole discretion. Upon
+        doing so, we will update this page and notify you through the app and/or the email address you provided when you
+        created your account. Any changes to these Terms of Service will take effect immediately from the date of
+        publication.
+      </p>
+
+      <p>These Terms of Service were last updated on 29 September 2025.</p>
+
+      <h3 className="text-xl font-semibold mt-6">Limitations of Use</h3>
+      <p>
+        By using Slouly - Music Speed Changer and our website, you warrant on behalf of yourself, any entity who you represent
+        who has entered into
+        these Terms of Service, and your users that you will not:
+      </p>
+      <ol className="list-decimal ml-6 space-y-2">
+        <li>
+          modify, copy, prepare derivative works of, decompile, or reverse engineer Slouly - Music Speed Changer or any
+          materials and software
+          contained within Slouly - Music Speed Changer or on our website;
+        </li>
+        <li>
+          remove any copyright or other proprietary notations from Slouly - Music Speed Changer or any materials and software
+          contained within
+          Slouly - Music Speed Changer or on our website;
+        </li>
+        <li>
+          transfer Slouly - Music Speed Changer or any of its associated materials to another person or &quot;mirror&quot; the
+          materials on any other
+          server;
+        </li>
+        <li>
+          knowingly or negligently use Slouly - Music Speed Changer or any of its associated services in a way that abuses or
+          disrupts our
+          networks or any other service Aibek Mazhitov provides;
+        </li>
+        <li>
+          use Slouly - Music Speed Changer or its associated services to transmit or publish any harassing, indecent,
+          obscene, fraudulent, or
+          unlawful material;
+        </li>
+        <li>
+          use Slouly - Music Speed Changer or its associated services in violation of any applicable laws or regulations;
+        </li>
+        <li>use Slouly - Music Speed Changer to send unauthorized advertising or spam;</li>
+        <li>harvest, collect, or gather user data without the user&apos;s consent; or</li>
+        <li>
+          use Slouly - Music Speed Changer or its associated services in such a way that may infringe the privacy,
+          intellectual property rights,
+          or other rights of third parties.
+        </li>
+      </ol>
+
+      <h3 className="text-xl font-semibold mt-6">Intellectual Property</h3>
+      <p>
+        The intellectual property in the materials in Slouly - Music Speed Changer and on our website are owned by or licensed
+        to Aibek Mazhitov.
+        You may download Slouly - Music Speed Changer, to view, use, and display the application on your mobile device for your
+        personal use
+        only.
+      </p>
+
+      <p>
+        This constitutes the grant of a license, not a transfer of title. This license shall automatically terminate if you
+        violate any of these restrictions or these Terms of Service, and may be terminated by Aibek Mazhitov at any
+        time.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Automatic Updates</h3>
+      <p>
+        You give us permission to download and install updates to Slouly - Music Speed Changer on your device in accordance with
+        your privacy
+        preferences. This permission can be revoked at any time by deleting Slouly - Music Speed Changer from your device.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Liability</h3>
+      <p>
+        Slouly - Music Speed Changer and the materials in Slouly - Music Speed Changer and on our website are provided on an &apos;as
+        is&apos; basis. To the extent permitted by
+        law, Aibek Mazhitov makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties
+        including, without limitation, implied warranties or conditions of merchantability, fitness for a particular
+        purpose, or non-infringement of intellectual property, or other violation of rights.
+      </p>
+
+      <p>
+        In no event shall Aibek Mazhitov or its suppliers be liable for any consequential loss suffered or incurred by you or
+        any third party arising from the use or inability to use Slouly - Music Speed Changer, our website, or any other
+        services provided by
+        Aibek Mazhitov or the materials in Slouly - Music Speed Changer, even if Aibek Mazhitov or an authorized representative
+        has been notified,
+        orally or in writing, of the possibility of such damage.
+      </p>
+
+      <p>
+        In the context of this agreement, &ldquo;consequential loss&rdquo; includes any consequential loss, indirect loss,
+        real or anticipated loss of profit, loss of benefit, loss of revenue, loss of business, loss of goodwill, loss of
+        opportunity, loss of savings, loss of reputation, loss of use and/or loss or corruption of data, whether under
+        statute, contract, equity, tort (including negligence), indemnity, or otherwise.
+      </p>
+
+      <p>
+        Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for
+        consequential or incidental damages, these limitations may not apply to you.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Accuracy of Materials</h3>
+      <p>
+        The materials appearing in Slouly - Music Speed Changer or on our website are not comprehensive and are for general
+        information purposes
+        only. To the extent permitted by law, Aibek Mazhitov does not warrant or make any representations concerning the
+        accuracy, likely results, or reliability of the use of the materials in Slouly - Music Speed Changer or on our website,
+        or otherwise
+        relating to such materials or on any resources linked to Slouly - Music Speed Changer and our website.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Links</h3>
+      <p>
+        Aibek Mazhitov has not reviewed all of the sites linked to Slouly - Music Speed Changer or on its corresponding website
+        and is not
+        responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement,
+        approval, or control by Aibek Mazhitov of the site. Use of any such linked website is at your own risk and we
+        strongly advise you make your own investigations with respect to the suitability of those sites.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Notice regarding Apple</h3>
+      <p>
+        To the extent that you are using or accessing Slouly - Music Speed Changer on an iOS device, you acknowledge and agree
+        to the terms of this
+        clause. You acknowledge that these Terms of Service are between you and Aibek Mazhitov only, not with Apple Inc.
+        (Apple), and Apple is not responsible for Slouly - Music Speed Changer and any materials available in Slouly - Music Speed Changer.
+      </p>
+
+      <p>
+        Apple has no obligation to furnish you with any maintenance and support services with respect to Slouly - Music Speed Changer.
+      </p>
+
+      <p>
+        If Slouly - Music Speed Changer fails to conform to any applicable warranty, you may notify Apple and Apple will refund
+        the purchase price
+        of the mobile application to you. To the maximum extent permitted by applicable law, Apple will have no other
+        warranty obligation whatsoever with respect to Slouly - Music Speed Changer and any other claims, losses, liabilities,
+        damages, costs, or
+        expenses attributable to any failure to conform to any warranty will be our responsibility.
+      </p>
+
+      <p>
+        Apple is not responsible for addressing any claims by you or any third party relating to Slouly - Music Speed Changer or
+        your use of
+        Slouly - Music Speed Changer, including but not limited to (1) product liability claims; (2) any claim that our mobile
+        application fails
+        to conform to any applicable legal or regulatory requirement; and (3) claims arising under consumer protection or
+        similar legislation.
+      </p>
+
+      <p>
+        Apple is not responsible for the investigation, defence, settlement, and discharge of any third-party claim that our
+        mobile application infringes that third party&apos;s intellectual property rights.
+      </p>
+
+      <p>
+        You agree to comply with any applicable third-party terms when using Slouly - Music Speed Changer, including any Usage
+        Rules set forth in
+        the Apple App Store Agreement of Service.
+      </p>
+
+      <p>
+        Apple and Apple&apos;s subsidiaries are third-party beneficiaries of these Terms of Service, and upon your acceptance of
+        these Terms of Service, Apple will have the right (and will be deemed to have accepted the right) to enforce these
+        Terms of Service against you as a third-party beneficiary of these Terms of Service.
+      </p>
+
+      <p>
+        You hereby represent and warrant that (1) you are not located in a country that is subject to a U.S. Government
+        embargo, or that has been designated by the U.S. Government as a &quot;terrorist supporting&quot; country; and (2) you are not
+        listed on any U.S. Government list of prohibited or restricted parties.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Right to Terminate</h3>
+      <p>
+        We may suspend or terminate your right to use Slouly - Music Speed Changer and these Terms of Service immediately upon
+        written notice to
+        you for any breach of these Terms of Service.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Severance</h3>
+      <p>
+        Any term of these Terms of Service which is wholly or partially void or unenforceable is severed to the extent that
+        it is void or unenforceable. The validity of the remainder of these Terms of Service is not affected.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Governing Law</h3>
+      <p>
+        These Terms of Service are governed by and construed in accordance with the laws of Germany. You irrevocably submit
+        to the exclusive jurisdiction of the courts in that State or location.
+      </p>
+
+      <h3 className="text-xl font-semibold mt-6">Contact Us</h3>
+      <p>For any questions or concerns regarding your privacy, you may contact us using the following details:</p>
+      <p>
+        Aibek Mazhitov<br />
+        <span>heyaibek [at] gmail [dot] com</span>
+      </p>
+
+      <section>
+        <Link href="/apps/slouly" className="text-[#7A78FF]">
+          Home
+        </Link>
+      </section>
+    </main>
+  );
+}

@@ -115,6 +115,16 @@ export default function VibelyPage() {
         </video>
 
         <section>
+          <h2 className="text-2xl font-semibold mb-4">Vibely - Music Visualizer</h2>
+          <p className="opacity-75 mb-4 leading-relaxed">
+            The ultimate Music Visualizer made for iOS! Create stunning visuals for your music using audio spectrum, waveform, starfield and other visualizers.
+          </p>
+          <p className="opacity-75 leading-relaxed">
+            Transform your music into stunning visual art with Vibely, the top music visualizer and video editor for musicians, DJs, podcasters, and music enthusiasts. Vibely offers exceptional audio visualization and an easy-to-use interface that sets it apart from other apps.
+          </p>
+        </section>
+
+        <section>
           <a
             href="https://apps.apple.com/app/id1528056717"
             target="_blank"

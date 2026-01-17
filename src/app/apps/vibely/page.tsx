@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Accordion, { AccordionItem } from "./Accordion";
 
 export const metadata: Metadata = {
   title: "Vibely - Music Visualizer",
@@ -143,6 +144,28 @@ export default function VibelyPage() {
               className="mx-auto rounded-[20px]"
             />
           </a>
+        </section>
+
+        <section id="known-issues" className="scroll-mt-[100px]">
+          <h2 className="text-2xl font-semibold mb-6">Known issues</h2>
+          
+          <Accordion>
+            <AccordionItem title="Video aspect ratio is 9:16">
+              Some users have reported that changing the aspect ratio doesn't work while exporting. I'm working on the fix right now.
+            </AccordionItem>
+
+            <AccordionItem title="Video freezes">
+              Sometimes video playback gets stuck. This is known issue introduced by iOS 26 and many developers reported this weird behaviour of AVPlayerLooper. Hopefully, Apple developers will fix this issue soon. As a workaround try adjusting the player progress bar, reloading the music or setting other background options to fix it. After doing this the player loads the correct state and you can keep creating audio visualizations.
+            </AccordionItem>
+
+            <AccordionItem title="Slow export">
+              Currently exporting takes very long especially for longer audio files and high export settings like 60fsp/4k resolution. The rendering process is complex by its nature especially if there are lots of visual effects and visualizers playing simultaneously. However I'm working on optimizing the render pipeline and making it faster in future updates. Please be aware with me, I'm trying my best.
+            </AccordionItem>
+
+            <AccordionItem title="Export breaks on 100%">
+              Some of you reported to me that export fails towards the end (100%) and the video is lost. The common reason is because your device storage is full. Try removing some media files from Photos app and cleaning the trash making more space for Vibely videos.
+            </AccordionItem>
+          </Accordion>
         </section>
 
         <section>

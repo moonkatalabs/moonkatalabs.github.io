@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
+import { readFileSync } from "fs";
+import { join } from "path";
 import Image from "next/image";
 import Link from "next/link";
 import Accordion, { AccordionItem } from "./Accordion";
+import { parseRoadmap } from "./roadmapParser";
 
 export const metadata: Metadata = {
   title: "Vibely - Music Visualizer",
-  description: "The ultimate music visualizer app in your pocket. Make your music stand out on social media with stunning visuals - effortlessly",
-  keywords: "vibely,music visualizer,easy,audio,visualization,maker,viral,tiktok,spectrum,waveform,intro,editor,vizzy,vythm,superplay,ableton,youtube,spotify,soundcloud",
+  description:
+    "The ultimate music visualizer app in your pocket. Make your music stand out on social media with stunning visuals - effortlessly",
+  keywords:
+    "vibely,music visualizer,easy,audio,visualization,maker,viral,tiktok,spectrum,waveform,intro,editor,vizzy,vythm,superplay,ableton,youtube,spotify,soundcloud",
   authors: [{ name: "Aibek Mazhitov" }],
   robots: "index, follow",
   alternates: {
@@ -16,7 +21,8 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://moonkata.com/apps/vibely",
     title: "Vibely - Music Visualizer",
-    description: "The ultimate music visualizer app in your pocket. Make your music stand out on social media with stunning visuals - effortlessly",
+    description:
+      "The ultimate music visualizer app in your pocket. Make your music stand out on social media with stunning visuals - effortlessly",
     images: [
       {
         url: "https://moonkata.com/apps/vibelyassets/preview.png",
@@ -30,7 +36,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vibely - Music Visualizer",
-    description: "The ultimate music visualizer app in your pocket. Make your music stand out on social media with stunning visuals - effortlessly",
+    description:
+      "The ultimate music visualizer app in your pocket. Make your music stand out on social media with stunning visuals - effortlessly",
     images: ["https://moonkata.com/apps/vibelyassets/preview.png"],
   },
   appleWebApp: {
@@ -46,7 +53,8 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   name: "Vibely",
-  description: "Transform your music with Vibely. Easily adjust tempo, pitch, and effects. Extract tracks from videos and create unique sound experiences.",
+  description:
+    "Transform your music with Vibely. Easily adjust tempo, pitch, and effects. Extract tracks from videos and create unique sound experiences.",
   url: "https://moonkata.com/apps/vibely",
   image: "https://moonkata.com/apps/vibelyassets/preview.png",
   applicationCategory: "MusicApplication",
@@ -67,7 +75,15 @@ const structuredData = {
   },
 };
 
+function getRoadmap() {
+  const path = join(process.cwd(), "src/app/apps/vibely/roadmap.md");
+  const content = readFileSync(path, "utf-8");
+  return parseRoadmap(content);
+}
+
 export default function VibelyPage() {
+  const roadmap = getRoadmap();
+
   return (
     <>
       <script
@@ -97,7 +113,8 @@ export default function VibelyPage() {
           </h1>
           <br />
           <p className="opacity-50">
-            Make your music stand out on social media with stunning visuals - effortlessly
+            Make your music stand out on social media with stunning visuals -
+            effortlessly
           </p>
         </section>
 
@@ -115,12 +132,19 @@ export default function VibelyPage() {
         </video>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Vibely - Music Visualizer</h2>
+          <h2 className="text-2xl font-semibold mb-4">
+            Vibely - Music Visualizer
+          </h2>
           <p className="opacity-75 mb-4 leading-relaxed">
-            The ultimate Music Visualizer made for iOS! Create stunning visuals for your music using audio spectrum, waveform, starfield and other visualizers.
+            The ultimate Music Visualizer made for iOS! Create stunning visuals
+            for your music using audio spectrum, waveform, starfield and other
+            visualizers.
           </p>
           <p className="opacity-75 leading-relaxed">
-            Transform your music into stunning visual art with Vibely, the top music visualizer and video editor for musicians, DJs, podcasters, and music enthusiasts. Vibely offers exceptional audio visualization and an easy-to-use interface that sets it apart from other apps.
+            Transform your music into stunning visual art with Vibely, the top
+            music visualizer and video editor for musicians, DJs, podcasters,
+            and music enthusiasts. Vibely offers exceptional audio visualization
+            and an easy-to-use interface that sets it apart from other apps.
           </p>
         </section>
 
@@ -158,23 +182,42 @@ export default function VibelyPage() {
 
         <section id="known-issues" className="scroll-mt-[100px]">
           <h2 className="text-2xl font-semibold mb-6">Known issues</h2>
-          
           <Accordion>
-            <AccordionItem title="Video aspect ratio is 9:16">
-              Some users have reported that changing the aspect ratio doesn't work while exporting. I'm working on the fix right now.
-            </AccordionItem>
+            {roadmap.knownIssues.map((issue) => (
+              <AccordionItem key={issue.title} title={issue.title}>
+                {issue.description}
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </section>
 
-            <AccordionItem title="Video freezes">
-              Sometimes video playback gets stuck. This is known issue introduced by iOS 26 and many developers reported this weird behaviour of AVPlayerLooper. Hopefully, Apple developers will fix this issue soon. As a workaround try adjusting the player progress bar, reloading the music or setting other background options to fix it. After doing this the player loads the correct state and you can keep creating audio visualizations.
-            </AccordionItem>
+        <section id="feature-requests" className="scroll-mt-[100px]">
+          <h2 className="text-2xl font-semibold mb-6">Feature requests</h2>
+          <Accordion>
+            {roadmap.featureRequests.map((item) => (
+              <AccordionItem
+                key={item.title}
+                title={item.title}
+                titlePrefix={item.completed ? "✅" : "👨🏻‍💻"}
+              >
+                {item.description}
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </section>
 
-            <AccordionItem title="Slow export">
-              Currently exporting takes very long especially for longer audio files and high export settings like 60fsp/4k resolution. The rendering process is complex by its nature especially if there are lots of visual effects and visualizers playing simultaneously. However I'm working on optimizing the render pipeline and making it faster in future updates. Please be aware with me, I'm trying my best.
-            </AccordionItem>
-
-            <AccordionItem title="Export breaks on 100%">
-              Some of you reported to me that export fails towards the end (100%) and the video is lost. The common reason is because your device storage is full. Try removing some media files from Photos app and cleaning the trash making more space for Vibely videos.
-            </AccordionItem>
+        <section id="bug-reports" className="scroll-mt-[100px]">
+          <h2 className="text-2xl font-semibold mb-6">Bug reports</h2>
+          <Accordion>
+            {roadmap.bugReports.map((item) => (
+              <AccordionItem
+                key={item.title}
+                title={item.title}
+                titlePrefix={item.completed ? "✅" : "👨🏻‍💻"}
+              >
+                {item.description}
+              </AccordionItem>
+            ))}
           </Accordion>
         </section>
 

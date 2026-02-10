@@ -6,6 +6,8 @@ Active feature requests and bug reports, finalized and ready for implementation.
 
 ## Know Issues
 
+- **Projects lost after an update** - Some users have reported that after updating the app, their previously saved projects were no longer available. I'm truly sorry if this happened to you. I can understand how frustrating and disruptive data loss can be. I'm actively investigating the cause of this issue. Early findings suggest it may be related to the data persistence mechanism used in earlier versions of the app. Unfortunately, this means that in some cases restoring lost projects may not be possible. That said, fixing this is a top priority. I'm working to ensure this cannot happen again in future updates and will share more details as soon as I have them. Thank you for your patience and understanding.
+
 - **Video aspect ratio is 9:16** - Some users have reported that changing the aspect ratio doesn't work while exporting. I'm working on the fix right now.
 
 - **Video freezes** - Sometimes video playback gets stuck. This is known issue introduced by iOS 26 and many developers reported this weird behaviour of AVPlayerLooper. Hopefully, Apple developers will fix this issue soon. As a workaround try adjusting the player progress bar, reloading the music or setting other background options to fix it. After doing this the player loads the correct state and you can keep creating audio visualizations.

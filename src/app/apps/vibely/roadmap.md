@@ -6,7 +6,7 @@ Active feature requests and bug reports, finalized and ready for implementation.
 
 ## Know Issues
 
-- **Projects lost after an update** - Some users have reported that after updating the app, their previously saved projects were no longer available. I'm truly sorry if this happened to you. I can understand how frustrating and disruptive data loss can be. I'm actively investigating the cause of this issue. Early findings suggest it may be related to the data persistence mechanism used in earlier versions of the app. Unfortunately, this means that in some cases restoring lost projects may not be possible. That said, fixing this is a top priority. I'm working to ensure this cannot happen again in future updates and will share more details as soon as I have them. Thank you for your patience and understanding.
+- **Projects lost after an update** - Some users have reported that after updating the app, their previously saved projects were no longer available. I'm truly sorry if this happened to you. I can understand how frustrating and disruptive data loss can be. The fix will be available with the next update v3.8.5 so that you will have an access to your previous projects. Thank you for your patience and understanding.
 
 - **Video aspect ratio is 9:16** - Some users have reported that changing the aspect ratio doesn't work while exporting. I'm working on the fix right now.
 

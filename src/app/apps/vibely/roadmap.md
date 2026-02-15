@@ -40,6 +40,7 @@ Active feature requests and bug reports, finalized and ready for implementation.
 
 ## Bug reports
 
+- [ ] **Export delay** - Amazing app, but the export always delays anything with dynamic sound or the waveform visualiser - video and sound never line up so need to edit this in a different app after exporting.
 - [ ] **White line on background video** — A visible white line/artifact appears when using a video as background. Reproduce with video background and fix rendering or compositing.
 - [ ] **4K export at 60 fps** — 4K resolution with 60 fps export fails, is unavailable, or produces incorrect output. Verify and fix 4K + 60 fps export path.
 - [ ] **4K export produces mirrored output** — Exporting at 4K results in mirrored (flipped) footage; same heat/settings previously worked. Fix orientation or transform in 4K export pipeline.

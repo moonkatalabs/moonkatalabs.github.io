@@ -191,21 +191,6 @@ export default function VibelyPage() {
           </Accordion>
         </section>
 
-        <section id="feature-requests" className="scroll-mt-[100px]">
-          <h2 className="text-2xl font-semibold mb-6">Feature requests</h2>
-          <Accordion>
-            {roadmap.featureRequests.map((item) => (
-              <AccordionItem
-                key={item.title}
-                title={item.title}
-                titlePrefix={item.completed ? "✅" : "👨🏻‍💻"}
-              >
-                {item.description}
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </section>
-
         <section id="bug-reports" className="scroll-mt-[100px]">
           <h2 className="text-2xl font-semibold mb-6">Bug reports</h2>
           <Accordion>
